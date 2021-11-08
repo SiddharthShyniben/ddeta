@@ -1,5 +1,5 @@
-import BaseClass from './base.ts';
-import DriveClass from './drive.ts';
+import BaseClass from './base/index.ts';
+import DriveClass from './drive/index.ts';
 import { KeyType } from './types/key.ts';
 
 export default class Deta {
