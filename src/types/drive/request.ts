@@ -1,3 +1,5 @@
+type Buffer = any;
+
 export interface PutOptions {
   data?: string | Uint8Array | Buffer;
   path?: string;

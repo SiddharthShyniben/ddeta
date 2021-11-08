@@ -17,6 +17,8 @@ import {
   DeleteManyResponse,
 } from '../types/drive/response.ts';
 
+type Buffer = any;
+
 export default class Drive {
   private requests: Requests;
 
@@ -189,11 +191,11 @@ export default class Drive {
 
     let buffer = new Uint8Array();
 
-    if (options.path) {
-      const fs = require('fs').promises;
-      const buf = await fs.readFile(options.path);
-      buffer = new Uint8Array(buf);
-    }
+    // if (options.path) {
+    //   const fs = require('fs').promises;
+    //   const buf = await fs.readFile(options.path);
+    //   buffer = new Uint8Array(buf);
+    // }
 
     if (options.data) {
       if (isNode() && options.data instanceof Buffer) {
