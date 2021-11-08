@@ -19,7 +19,7 @@ export function stringToUint8Array(str: string): Uint8Array {
  * @returns {Uint8Array}
  * @todo
  */
-export function bufferToUint8Array(_buffer: Buffer): Uint8Array {
+export function bufferToUint8Array(_buffer: any): Uint8Array {
   // const array = new Uint8Array(buffer.length);
   // for (let i = 0; i < buffer.length; i += 1) {
   //   array[i] = buffer[i];

@@ -198,7 +198,7 @@ export default class Drive {
     // }
 
     if (options.data) {
-      if (isNode() && options.data instanceof Buffer) {
+      if (isNode() /* && options.data instanceof Buffer */) { // TODO
         buffer = bufferToUint8Array(options.data as Buffer);
       } else if (isString(options.data)) {
         buffer = stringToUint8Array(options.data as string);
